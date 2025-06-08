@@ -1,6 +1,6 @@
 {
   "name": "visible-scroll",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Exposes visible scrollbars",
   "main": "src/index.js",
   "browser": "dist/index.iife.js",
