@@ -1,0 +1,28 @@
+#component {
+    display: flex;
+	max-width: var(--visible-scroll-max-width, auto);
+	max-height: var(--visible-scroll-max-height, auto);
+}
+
+#frame {
+    overflow: auto;
+}
+
+#scroller {
+    position: absolute;
+	width: var(--🚫-client-width, auto);
+	overflow-x: auto;
+	overflow-y: hidden;
+	transform: translateY(max(var(--🚫-offset-top, 0px), -1px));
+}
+
+#scroller::before {
+	content: '';
+	height: 1px;
+	display: block;
+	width: var(--🚫-scroll-width, auto);
+}
+
+#contents {
+    display: contents;
+}
